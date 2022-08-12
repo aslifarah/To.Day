@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>TO-DAY</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+		<link href="cal.css" rel="stylesheet" />
+		<link href="style_ui.css" rel="stylesheet" />
+		<style>
+		.masthead {
+ width: 100%;
+    
+    justify-content: center;
+    align-items: center;
+   
+    background: #161623;
+    overflow: hidden;
+	background-image: url("backgroundPic.jpg");
+	height: 100%;
+backdrop-filter: blur(1px);
+    
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	
+
+  }
+		.container
+{
+    
+    background: rgba(255,255,255,0.1);
+    box-shadow:0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(1px);
+ 
+    
+}
+#calendar
+{position: relative;
+    width: 100%;
+  
+}
+#calendar table
+{position: relative;
+    width: 100%;
+    margin-top: 40px;
+    border-spacing: 5px;
+}
+#calendar table td
+{position: relative;
+    color:black;
+	font-weight:bold;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#calendar table td:hover
+{position: relative;
+   background:#fff;
+   color:#111 !important;
+    
+}
+#calendar table tr:nth-child(1) td
+{position: relative;
+    background: #fff;
+    color:#111;
+    border-radius: 5px;
+    font-weight: 600;
+    
+}
+.super-navbar.scrolled {
+width:96%;
+
+    
+	border-radius: 8px;
+	
+	
+}
+
+.super-navbar {
+    padding: 0 var(--padding-right) 0 var(--padding-left);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.super-navbar.scrolled .super-navbar__content {
+    height: 70px;
+}
+
+.super-navbar__content, .super-navbar__item {
+    display: -moz-box;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+.super-navbar__content {
+    height: 100px;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    -webkit-transition: height .3s ease-in-out;
+    -moz-transition: height .3s ease-in-out;
+    transition: height .3s ease-in-out;
+    -webkit-box-shadow: 0 0 10px transparent;
+    box-shadow: 0 0 10px transparent;
+}
+
+.super-navbar__logo-wrapper {
+    width: 36px;
+    height: 36px;
+    position: relative;
+}
+
+.notion-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.super-navbar__item-list {
+    width: auto;
+    height: 100%;
+    display: -moz-box;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+}
+
+.super-navbar__item {
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    transition: var(--transition);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -.5px;
+    color: var(--color-text-gray);
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+    -moz-box-pack: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.super-navbar__content, .super-navbar__item {
+    display: -moz-box;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+
+</style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+            <div class="container px-5">
+                <div class="super-navbar scrolled">
+	
+  <div class="super-navbar__content">
+   	<span><img src="nav.png" style="width:100px;height:60px;margin-left:10px;">
+<b style="color:blue;font-size:30px;font-weight:bolder; font-family: 'Courier New', Courier, monospace;">TO-DAY</b>&nbsp  <sub></sub></b>
+    <!-- navbar item  -->
+    </span><div class="super-navbar__item-list">
+	
+      <a class="notion-link super-navbar__item" href="index.html"><b>Home</b></a>
+      <a class="notion-link super-navbar__item" href="tasks.html"><b>Tasks</b></a>
+</div>
+  </div>
+</div>
+            </div>
+        </nav>
+        <!-- Mashead header-->
+        <header class="masthead">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <!-- Mashead text and app badges-->
+                        <div class="mb-5 mb-lg-0 text-center text-lg-start">
+                          <div class="container">
+			
+                <div id="calendar">
+
+                </div>
+<center>
+                         </div>   </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- Masthead device mockup feature-->
+                        <div class="masthead-device-mockup">
+                           <form id="contactForm"  class="js-form" onSubmit="submitJSForm()">
+                            <!-- Name input-->	<br>
+                            <div class="form-floating mb-3">
+							 <div class="task-input">
+       <label for="name">Task</label>
+                                <input class="form-control" id="name" type="text" placeholder="Enter a new task Here" data-sb-validations="required" />	<br>
+
+                                
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A Task is required.</div>
+                            	
+                         
+						  </div></div><br><label for="Date">Date</label>
+                            <div class="form-floating mb-3">
+
+							
+                                <input class="form-control" id="js-todo-input2" ID="name"  placeholder="Date" required />	
+                            </div>
+						
+                            <label for="name"> Time</label>
+                            <div class="form-floating mb-3">
+						
+                                <input type="time" class="form-control" id="js-todo-input3" ID="form-control" type="tel" placeholder="time" data-sb-validations="required" />
+                                </div>
+                                
+                            </div>
+                            <!-- Message input-->
+                           
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                           
+                            <center><button class="btn btn-primary btn-sm" id="submit" type="submit" type="submit">Submit</button></center>
+                        </form>
+                        </div></header>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Quote/testimonial aside-->
+        
+<script src="calendar.js"></script>
+	<script src="java2.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+	
+	
+	dycalendar.draw({
+            target:'#calendar',
+            type:'month',
+            dayformat:'full',
+            monthformat:'full',
+            highlighttargetdate:true,
+            prevnextbutton:'show'
+
+        })
+		
+    </script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
